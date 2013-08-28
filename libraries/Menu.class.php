@@ -424,10 +424,10 @@ class PMA_Menu
             $tabs['operation']['icon'] = 'b_tblops.png';
 
             if ($is_superuser && ! PMA_DRIZZLE) {
-                $tabs['privileges']['link'] = 'server_privileges.php';
-                $tabs['privileges']['args']['checkprivs'] = $this->_db;
+                $tabs['privileges']['link'] = 'db_privileges.php';
+                //$tabs['privileges']['args']['checkprivs'] = $this->_db;
                 // stay on database view
-                $tabs['privileges']['args']['viewing_mode'] = 'db';
+                //$tabs['privileges']['args']['viewing_mode'] = 'db';
                 $tabs['privileges']['text'] = __('Privileges');
                 $tabs['privileges']['icon'] = 's_rights.png';
             }
